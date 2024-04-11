@@ -31,7 +31,7 @@ public class LawnmowerMover : MonoBehaviour
     }
 
 
-    public void RotateRoomba(Vector3 newRotation)
+    public void RotateLawnmower(Vector3 newRotation)
     {
         rb.velocity = Vector3.zero;
         rb.isKinematic = true;
