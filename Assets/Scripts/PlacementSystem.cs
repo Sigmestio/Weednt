@@ -25,13 +25,15 @@ public class PlacementSystem : MonoBehaviour
         {
             ShowArrowPrefabricator(mousePosition);
         }
-
+        
+        RotateArrow();
+        
         if (Input.GetMouseButtonDown(0) && arrowPrefabricator != null) 
         {
             PlaceArrow();
         }
 
-        RotateArrow();
+       
     }
 
     private void ShowArrowPrefabricator(Vector3 position)
@@ -50,6 +52,7 @@ public class PlacementSystem : MonoBehaviour
             float mouseXMovement = Input.GetAxis("Mouse X");
             arrowRotationAngle += mouseXMovement * 45f;
             arrowPrefabricator.transform.GetChild(0).rotation = Quaternion.Euler(0f, arrowRotationAngle, 0f);
+            
         }
     }
 
@@ -58,7 +61,7 @@ public class PlacementSystem : MonoBehaviour
         //save rotation tba
     }
 
-    private bool IsArrowPrefabricatorAlreadyPlaced(Vector3Int gridPosition)
+    private bool IsArrowPrefabricatorAlreadyPlaced(Vector3Int gridPosition) //tba
     {
         return false; 
     }
