@@ -9,8 +9,10 @@ public class LawnmowerMover : MonoBehaviour
     public Rigidbody rb;
     [SerializeField] private bool isMoving = false;
     [SerializeField] private LayerMask wall;
+    [SerializeField] private LayerMask charger;
+    [SerializeField] private LayerMask asphodel;
 
-    //[SerializeField] private AudioSource roombaStart; - podmieni� na kosiarke
+    //[SerializeField] private AudioSource roombaStart; - podmienic na kosiarke
 
 
     void Start()
@@ -31,7 +33,7 @@ public class LawnmowerMover : MonoBehaviour
     }
 
 
-    public void RotateRoomba(Vector3 newRotation)
+    public void RotateLawnmower(Vector3 newRotation)
     {
         rb.velocity = Vector3.zero;
         rb.isKinematic = true;
@@ -39,6 +41,7 @@ public class LawnmowerMover : MonoBehaviour
         rb.isKinematic = false;
     }
 
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -46,8 +49,21 @@ public class LawnmowerMover : MonoBehaviour
             if (!isMoving)
             {
                 isMoving = true;
-                //roombaStart.Play();
+                //roombaStart.Play(); tba
             }
         }
+    }
+    
+    public void StopAndCharge()
+    {
+        isMoving = !Physics.CheckSphere(transform.position, 0.1f, charger);
+        if (isMoving == false) { rb.velocity = Vector3.zero; }
+        
+    }
+    
+    public void StopAndDie()
+    {
+        isMoving = !Physics.CheckSphere(transform.position, 0.1f, asphodel);
+        if (isMoving == false) { rb.velocity = Vector3.zero; }
     }
 }
