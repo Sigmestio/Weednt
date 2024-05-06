@@ -49,10 +49,21 @@ public class PlacementSystem : MonoBehaviour
     {
         if (arrowPrefabricator != null)
         {
-            float mouseXMovement = Input.GetAxis("Mouse X");
-            arrowRotationAngle += mouseXMovement * 45f;
-            arrowPrefabricator.transform.GetChild(0).rotation = Quaternion.Euler(0f, arrowRotationAngle, 0f);
-            
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out RaycastHit hitInfo))
+            {
+                // Debug.Log(hitInfo.transform.gameObject.name);
+                Vector3 direction = grid.WorldToCell(hitInfo.point) - arrowPrefabricator.transform.position;
+                direction = new Vector3(direction.x + 0.5f, 0, direction.z + 0.5f);
+                direction = new Vector3(Mathf.Clamp(direction.x, -1f, 1f), 0, Mathf.Clamp(direction.z, -1f, 1f));
+                // Debug.Log(direction);
+
+                if (direction != Vector3.zero)
+                {
+                    arrowPrefabricator.transform.GetChild(0).rotation = Quaternion.LookRotation(direction);
+                }
+            }
         }
     }
 
