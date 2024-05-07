@@ -4,36 +4,36 @@ using UnityEngine;
 
 public class PlacementSystem : MonoBehaviour
 {
-    [SerializeField] private GameObject arrowPrefab; 
+     [SerializeField] private GameObject arrowPrefab; 
     [SerializeField] private InputManager inputManager;
     [SerializeField] private Grid grid;
     [SerializeField] private GameObject mouseIndicator, cellIndicator;
     
-
     private GameObject arrowPrefabricator; 
     private float arrowRotationAngle; 
+    private bool rotateArrowEnabled = true;
 
     private void Update()
     {
-    
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
         mouseIndicator.transform.position = mousePosition;
         cellIndicator.transform.position = grid.CellToWorld(gridPosition);
         
-        if (Input.GetMouseButtonDown(1)) 
+        if (Input.GetMouseButtonDown(1))
         {
             ShowArrowPrefabricator(mousePosition);
         }
         
-        RotateArrow();
+        if (rotateArrowEnabled)
+        {
+            RotateArrow();
+        }
         
         if (Input.GetMouseButtonDown(0) && arrowPrefabricator != null) 
         {
             PlaceArrow();
         }
-
-       
     }
 
     private void ShowArrowPrefabricator(Vector3 position)
@@ -42,6 +42,7 @@ public class PlacementSystem : MonoBehaviour
         if (!IsArrowPrefabricatorAlreadyPlaced(gridPosition))
         {
             arrowPrefabricator = Instantiate(arrowPrefab, grid.CellToWorld(gridPosition), Quaternion.identity);
+            rotateArrowEnabled = true;
         }
     }
 
@@ -49,16 +50,28 @@ public class PlacementSystem : MonoBehaviour
     {
         if (arrowPrefabricator != null)
         {
-            float mouseXMovement = Input.GetAxis("Mouse X");
-            arrowRotationAngle += mouseXMovement * 45f;
-            arrowPrefabricator.transform.GetChild(0).rotation = Quaternion.Euler(0f, arrowRotationAngle, 0f);
+            cellIndicator.SetActive(false);
             
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out RaycastHit hitInfo))
+            {
+                Vector3 direction = grid.WorldToCell(hitInfo.point) - arrowPrefabricator.transform.position;
+                direction = new Vector3(direction.x + 0.5f, 0, direction.z + 0.5f);
+                direction = new Vector3(Mathf.Clamp(direction.x, -1f, 1f), 0, Mathf.Clamp(direction.z, -1f, 1f));
+                if (direction != Vector3.zero)
+                {
+                    arrowPrefabricator.transform.GetChild(0).rotation = Quaternion.LookRotation(direction);
+                }
+            }
         }
     }
 
     private void PlaceArrow()
     {
-        //save rotation tba
+        rotateArrowEnabled = false;
+        
+        cellIndicator.SetActive(true);
     }
 
     private bool IsArrowPrefabricatorAlreadyPlaced(Vector3Int gridPosition) //tba
@@ -66,5 +79,3 @@ public class PlacementSystem : MonoBehaviour
         return false; 
     }
 }
-
-
