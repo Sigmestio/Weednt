@@ -12,7 +12,7 @@ public class PlacementSystem : MonoBehaviour
     private GameObject arrowPrefabricator; 
     private float arrowRotationAngle; 
     private bool rotateArrowEnabled = true;
- private bool placeArrowOnNextClick = false;
+    private bool placeArrowOnNextClick = false;
 
     private void Update()
     {
@@ -89,7 +89,6 @@ public class PlacementSystem : MonoBehaviour
     }
     private bool IsArrowPrefabricatorAlreadyPlaced(Vector3Int gridPosition)
     {
-        // Sprawdzanie czy strzałka jest już umieszczona na danej pozycji
         return false; 
     }
 }
