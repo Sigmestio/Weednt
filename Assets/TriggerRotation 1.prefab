@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6212360715937664658}
   m_Layer: 0
   m_Name: Trigger
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 2068186046053674104}
   m_Layer: 0
   m_Name: TriggerRotation 1
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlacementSystem : MonoBehaviour
 {
-     [SerializeField] private GameObject arrowPrefab; 
+    [SerializeField] private GameObject arrowPrefab; 
     [SerializeField] private InputManager inputManager;
     [SerializeField] private Grid grid;
     [SerializeField] private GameObject mouseIndicator, cellIndicator;
@@ -12,6 +12,7 @@ public class PlacementSystem : MonoBehaviour
     private GameObject arrowPrefabricator; 
     private float arrowRotationAngle; 
     private bool rotateArrowEnabled = true;
+    private bool placeArrowOnNextClick = false;
 
     private void Update()
     {
@@ -20,9 +21,17 @@ public class PlacementSystem : MonoBehaviour
         mouseIndicator.transform.position = mousePosition;
         cellIndicator.transform.position = grid.CellToWorld(gridPosition);
         
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
-            ShowArrowPrefabricator(mousePosition);
+            if (placeArrowOnNextClick)
+            {
+                placeArrowOnNextClick = false;
+                PlaceArrow();
+            }
+            else
+            {
+                ShowArrowPrefabricator(mousePosition);
+            }
         }
         
         if (rotateArrowEnabled)
@@ -30,9 +39,9 @@ public class PlacementSystem : MonoBehaviour
             RotateArrow();
         }
         
-        if (Input.GetMouseButtonDown(0) && arrowPrefabricator != null) 
+        if (Input.GetMouseButtonDown(1))
         {
-            PlaceArrow();
+            DeleteArrowUnderMouse();
         }
     }
 
@@ -43,6 +52,7 @@ public class PlacementSystem : MonoBehaviour
         {
             arrowPrefabricator = Instantiate(arrowPrefab, grid.CellToWorld(gridPosition), Quaternion.identity);
             rotateArrowEnabled = true;
+            placeArrowOnNextClick = true;
         }
     }
 
@@ -70,11 +80,14 @@ public class PlacementSystem : MonoBehaviour
     private void PlaceArrow()
     {
         rotateArrowEnabled = false;
-        
         cellIndicator.SetActive(true);
     }
 
-    private bool IsArrowPrefabricatorAlreadyPlaced(Vector3Int gridPosition) //tba
+    private void DeleteArrowUnderMouse()
+    {
+       //tba
+    }
+    private bool IsArrowPrefabricatorAlreadyPlaced(Vector3Int gridPosition)
     {
         return false; 
     }
