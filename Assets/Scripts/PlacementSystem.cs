@@ -85,7 +85,18 @@ public class PlacementSystem : MonoBehaviour
 
     private void DeleteArrowUnderMouse()
     {
-       //tba
+        Vector3 mousePosition = inputManager.GetSelectedMapPosition();
+        Vector3Int gridPosition = grid.WorldToCell(mousePosition);
+
+        Collider[] colliders = Physics.OverlapSphere(grid.CellToWorld(gridPosition), 1f);
+
+        foreach (Collider collider in colliders)
+        {
+            if (collider.CompareTag("Arrow"))
+            {
+                Destroy(collider.gameObject);
+            }
+        }
     }
     private bool IsArrowPrefabricatorAlreadyPlaced(Vector3Int gridPosition)
     {
