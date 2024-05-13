@@ -42,7 +42,7 @@ public class PlacementSystem : MonoBehaviour
         
         if (Input.GetMouseButtonDown(1))
         {
-            DeleteArrowUnderMouse(mousePosition);
+            DeleteArrowUnderMouse();
         }
     }
 
@@ -85,13 +85,23 @@ public class PlacementSystem : MonoBehaviour
         ScoreManager.Instance.AddRouteMoves();
     }
 
-    private void DeleteArrowUnderMouse(Vector3 mousePosition)
+    private void DeleteArrowUnderMouse()
     {
+        Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
-        if (IsArrowPrefabricatorAlreadyPlaced(gridPosition))
+        
+        Vector3 sphereCenter = grid.CellToWorld(gridPosition) + new Vector3(0.5f, 0f, 0.5f);
+        Collider[] colliders = Physics.OverlapSphere(sphereCenter, 0.4f);
+
+        
+
+        foreach (Collider collider in colliders)
         {
-            Destroy(arrowPrefabricator);
-            ScoreManager.Instance.DeleteRouteMoves();
+            if (collider.CompareTag("Arrow"))
+            {
+                Destroy(collider.gameObject);
+                ScoreManager.Instance.DeleteRouteMoves();
+            }
         }
     }
     
