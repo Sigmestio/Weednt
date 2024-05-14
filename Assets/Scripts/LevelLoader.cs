@@ -1,9 +1,12 @@
-
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
+    public TMP_Text highScore1Text;
+    public SceneConfigsSO sceneData;
+    
     public void Level1()
     {
         SceneManager.LoadScene("Level_1");
@@ -18,4 +21,9 @@ public class LevelLoader : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
     }
+    public void SetScoreText(int score)
+    {
+        highScore1Text.text = "Score: " + score;
+    }
+    
 }

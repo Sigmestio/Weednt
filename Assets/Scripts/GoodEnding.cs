@@ -15,6 +15,7 @@ public class GoodEnding : MonoBehaviour
         {
             //roombaEnd.Play();
             //BackgroundMusicStops.Stop();
+            ScoreManager.Instance.EndLevel();
             endgameCanvas.SetActive(true);
             lawnmowerMover.StopAndCharge();
             

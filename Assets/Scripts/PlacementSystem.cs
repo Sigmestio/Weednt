@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PlacementSystem : MonoBehaviour
@@ -81,23 +82,29 @@ public class PlacementSystem : MonoBehaviour
     {
         rotateArrowEnabled = false;
         cellIndicator.SetActive(true);
+        ScoreManager.Instance.AddRouteMoves();
     }
 
     private void DeleteArrowUnderMouse()
     {
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
+        
+        Vector3 sphereCenter = grid.CellToWorld(gridPosition) + new Vector3(0.5f, 0f, 0.5f);
+        Collider[] colliders = Physics.OverlapSphere(sphereCenter, 0.4f);
 
-        Collider[] colliders = Physics.OverlapSphere(grid.CellToWorld(gridPosition), 1f);
+        
 
         foreach (Collider collider in colliders)
         {
             if (collider.CompareTag("Arrow"))
             {
                 Destroy(collider.gameObject);
+                ScoreManager.Instance.DeleteRouteMoves();
             }
         }
     }
+    
     private bool IsArrowPrefabricatorAlreadyPlaced(Vector3Int gridPosition)
     {
         return false; 
