@@ -6,7 +6,7 @@ public class DisableWeedAndBonus : MonoBehaviour
 {
     private bool hasTriggered = false;
 
-    //[SerializeField] private AudioSource lawnmowerEat; 
+    [SerializeField] private AudioSource lawnmowerEat; 
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,7 +17,7 @@ public class DisableWeedAndBonus : MonoBehaviour
             {
                 hasTriggered = true;
                 DisableMesh();
-                //lawnmowerEat.Play();
+                lawnmowerEat.Play();
 
             }
         }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -279,6 +279,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1122577253}
   m_SourcePrefab: {fileID: 100100000, guid: af1937cc3ebb2f74baa81b914f9fd00e, type: 3}
+--- !u!82 &53256052 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 970106271459323045, guid: 602a6c01c8211d2468e3f438f6caf664,
+    type: 3}
+  m_PrefabInstance: {fileID: 378198363}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &74658583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,6 +1123,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1391889547}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b29ce4461c08cad48b13eaf6f2c862b9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1391889551}
   m_SourcePrefab: {fileID: 100100000, guid: b29ce4461c08cad48b13eaf6f2c862b9, type: 3}
 --- !u!1 &277308539
 GameObject:
@@ -1307,6 +1317,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   badEndgameCanvas: {fileID: 1627981329}
   lawnmowerMover: {fileID: 1391889542}
+  sadMusic: {fileID: 1516814750}
+  BackgroundMusicStops: {fileID: 53256052}
+  lawnmowerStops: {fileID: 1391889551}
 --- !u!65 &324125158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1378,6 +1391,74 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324125155}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &378198363
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1504840151809534552, guid: 602a6c01c8211d2468e3f438f6caf664,
+        type: 3}
+      propertyPath: m_Name
+      value: BackgroundMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456093798429131301, guid: 602a6c01c8211d2468e3f438f6caf664,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1267451
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456093798429131301, guid: 602a6c01c8211d2468e3f438f6caf664,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.66479087
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456093798429131301, guid: 602a6c01c8211d2468e3f438f6caf664,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.33872366
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456093798429131301, guid: 602a6c01c8211d2468e3f438f6caf664,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456093798429131301, guid: 602a6c01c8211d2468e3f438f6caf664,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456093798429131301, guid: 602a6c01c8211d2468e3f438f6caf664,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456093798429131301, guid: 602a6c01c8211d2468e3f438f6caf664,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456093798429131301, guid: 602a6c01c8211d2468e3f438f6caf664,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456093798429131301, guid: 602a6c01c8211d2468e3f438f6caf664,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456093798429131301, guid: 602a6c01c8211d2468e3f438f6caf664,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 602a6c01c8211d2468e3f438f6caf664, type: 3}
 --- !u!4 &413178188 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8900214739467371539, guid: 1322698a000b2c642864f5c27ecaf147,
@@ -1743,6 +1824,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   badEndgameCanvas: {fileID: 1627981329}
   lawnmowerMover: {fileID: 1391889542}
+  sadMusic: {fileID: 901357708}
+  BackgroundMusicStops: {fileID: 53256052}
+  lawnmowerStops: {fileID: 1391889551}
 --- !u!1 &682779665
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,6 +2353,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 901357706}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &901357708 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7522453796590599270, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 901357706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &913903245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2636,6 +2726,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499d8d035de63b04a80e97df10a7ac94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lawnmowerEat: {fileID: 1122577255}
+--- !u!82 &1122577255 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4814707085774365535, guid: af1937cc3ebb2f74baa81b914f9fd00e,
+    type: 3}
+  m_PrefabInstance: {fileID: 30914083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1172161758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2718,6 +2815,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   badEndgameCanvas: {fileID: 1627981329}
   lawnmowerMover: {fileID: 1391889542}
+  sadMusic: {fileID: 1816683549}
+  BackgroundMusicStops: {fileID: 53256052}
+  lawnmowerStops: {fileID: 1391889551}
 --- !u!65 &1185543394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2974,6 +3074,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endgameCanvas: {fileID: 1983755697}
   lawnmowerMover: {fileID: 1391889542}
+  happyMusic: {fileID: 0}
+  BackgroundMusicStops: {fileID: 0}
+  lawnmowerStops: {fileID: 0}
 --- !u!65 &1259216037
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3360,6 +3463,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499d8d035de63b04a80e97df10a7ac94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lawnmowerEat: {fileID: 1344418930}
+--- !u!82 &1344418930 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4814707085774365535, guid: af1937cc3ebb2f74baa81b914f9fd00e,
+    type: 3}
+  m_PrefabInstance: {fileID: 837470879}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1350941501
 GameObject:
   m_ObjectHideFlags: 0
@@ -3483,6 +3593,7 @@ MonoBehaviour:
   asphodel:
     serializedVersion: 2
     m_Bits: 80
+  lawnmowerStart: {fileID: 1391889551}
 --- !u!65 &1391889547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3504,6 +3615,102 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.2, y: 0.8944685, z: 0.2}
   m_Center: {x: 0, y: 0.44723424, z: 0}
+--- !u!82 &1391889551
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391889537}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c8333c67cdd41dc42a320b8070972e8b, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1394956703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3732,6 +3939,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1402277966}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1516814750 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7522453796590599270, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1046246707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1580656773
 GameObject:
   m_ObjectHideFlags: 0
@@ -3916,6 +4129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c784d9363d6975c46ab6505b0907abd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore1Text: {fileID: 0}
+  sceneData: {fileID: 0}
 --- !u!1 &1636653863
 GameObject:
   m_ObjectHideFlags: 0
@@ -4389,6 +4604,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   badEndgameCanvas: {fileID: 1627981329}
   lawnmowerMover: {fileID: 1391889542}
+  sadMusic: {fileID: 2065429538}
+  BackgroundMusicStops: {fileID: 53256052}
+  lawnmowerStops: {fileID: 1391889551}
+--- !u!82 &1816683549 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7522453796590599270, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 138310885}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1829066564 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4576485988613635692, guid: af1937cc3ebb2f74baa81b914f9fd00e,
@@ -4407,6 +4631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499d8d035de63b04a80e97df10a7ac94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lawnmowerEat: {fileID: 1829066571}
 --- !u!64 &1829066570
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4429,6 +4654,12 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8017566174234000633, guid: 0ff1b42fdeef30b41b26db5c5176fccb, type: 3}
+--- !u!82 &1829066571 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4814707085774365535, guid: af1937cc3ebb2f74baa81b914f9fd00e,
+    type: 3}
+  m_PrefabInstance: {fileID: 913903245}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1846459534
 GameObject:
   m_ObjectHideFlags: 0
@@ -4850,6 +5081,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c784d9363d6975c46ab6505b0907abd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highScore1Text: {fileID: 0}
+  sceneData: {fileID: 0}
 --- !u!1001 &2029510044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5022,6 +5255,12 @@ PrefabInstance:
 --- !u!4 &2065429537 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3214682950060628802, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2065429536}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2065429538 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7522453796590599270, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1,
     type: 3}
   m_PrefabInstance: {fileID: 2065429536}
   m_PrefabAsset: {fileID: 0}
@@ -5431,3 +5670,4 @@ SceneRoots:
   - {fileID: 210035188}
   - {fileID: 230276}
   - {fileID: 1350941502}
+  - {fileID: 378198363}

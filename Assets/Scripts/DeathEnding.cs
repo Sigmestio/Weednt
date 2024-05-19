@@ -6,14 +6,16 @@ public class DeathEnding : MonoBehaviour
 {
     [SerializeField] GameObject badEndgameCanvas;
     [SerializeField] LawnmowerMover lawnmowerMover;
-    //[SerializeField] private AudioSource roombaEnd;
-    //[SerializeField] private AudioSource BackgroundMusicStops;
+    [SerializeField] private AudioSource sadMusic;
+    [SerializeField] private AudioSource BackgroundMusicStops;
+    [SerializeField] private AudioSource lawnmowerStops;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            //roombaEnd.Play();
-            //BackgroundMusicStops.Stop();
+            sadMusic.Play();
+            BackgroundMusicStops.Stop();
+            lawnmowerStops.Stop();
             badEndgameCanvas.SetActive(true);
             lawnmowerMover.StopAndDie();
             

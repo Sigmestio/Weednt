@@ -12,7 +12,7 @@ public class LawnmowerMover : MonoBehaviour
     [SerializeField] private LayerMask charger;
     [SerializeField] private LayerMask asphodel;
 
-    //[SerializeField] private AudioSource roombaStart; - podmienic na kosiarke
+    [SerializeField] private AudioSource lawnmowerStart; 
 
 
     void Start()
@@ -49,7 +49,7 @@ public class LawnmowerMover : MonoBehaviour
             if (!isMoving)
             {
                 isMoving = true;
-                //roombaStart.Play(); tba
+                lawnmowerStart.Play(); 
             }
         }
     }

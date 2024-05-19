@@ -7,14 +7,16 @@ public class GoodEnding : MonoBehaviour
 {
     [SerializeField] GameObject endgameCanvas;
     [SerializeField] LawnmowerMover lawnmowerMover;
-    //[SerializeField] private AudioSource roombaEnd;
-    //[SerializeField] private AudioSource BackgroundMusicStops;
+    [SerializeField] private AudioSource happyMusic;
+    [SerializeField] private AudioSource BackgroundMusicStops;
+    [SerializeField] private AudioSource lawnmowerStops;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            //roombaEnd.Play();
-            //BackgroundMusicStops.Stop();
+            happyMusic.Play();
+            BackgroundMusicStops.Stop();
+            lawnmowerStops.Stop();
             ScoreManager.Instance.EndLevel();
             endgameCanvas.SetActive(true);
             lawnmowerMover.StopAndCharge();
