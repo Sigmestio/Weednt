@@ -16,6 +16,10 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+    public void Settings()
+    {
+        SceneManager.LoadScene("Settings");
+    }
     public void Quit()
     {
         Debug.Log("Quit");
