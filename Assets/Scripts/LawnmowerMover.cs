@@ -12,8 +12,9 @@ public class LawnmowerMover : MonoBehaviour
     [SerializeField] private LayerMask charger;
     [SerializeField] private LayerMask asphodel;
 
-    [SerializeField] private AudioSource lawnmowerStart; 
+    [SerializeField] private AudioSource lawnmowerStart;
 
+    [SerializeField] private ParticleSystem dustTrail;
 
     void Start()
     {
@@ -50,6 +51,8 @@ public class LawnmowerMover : MonoBehaviour
             {
                 isMoving = true;
                 lawnmowerStart.Play(); 
+
+                dustTrail.Play();
             }
         }
     }
