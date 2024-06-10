@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2774323159959807073}
   - component: {fileID: 4079817627843556205}
   - component: {fileID: 8867562844161772766}
+  - component: {fileID: 2931038455394940941}
   m_Layer: 0
   m_Name: Pond_01
   m_TagString: Untagged
@@ -89,6 +90,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2931038455394940941
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368503897565220514}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.7119584, y: 1.5408546, z: 1.6951205}
+  m_Center: {x: 0.023945749, y: 0.24980158, z: 0.016340971}
 --- !u!1 &4574237275458276128
 GameObject:
   m_ObjectHideFlags: 0
