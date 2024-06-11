@@ -82,7 +82,7 @@ public class PlacementSystem : MonoBehaviour
     {
         rotateArrowEnabled = false;
         cellIndicator.SetActive(true);
-      //  ScoreManager.Instance.AddRouteMoves();
+        ScoreManager.Instance.AddRouteMoves();
     }
 
     private void DeleteArrowUnderMouse()
