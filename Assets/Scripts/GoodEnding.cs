@@ -19,7 +19,7 @@ public class GoodEnding : MonoBehaviour
             lawnmowerStops.Stop();
             ScoreManager.Instance.EndLevel();
             endgameCanvas.SetActive(true);
-            lawnmowerMover.StopAndCharge();
+          
             
         }
     }

@@ -9,7 +9,6 @@ public class LawnmowerMover : MonoBehaviour
     public Rigidbody rb;
     [SerializeField] private bool isMoving = false;
     [SerializeField] private LayerMask wall;
-    [SerializeField] private LayerMask charger;
     [SerializeField] private LayerMask asphodel;
 
     [SerializeField] private AudioSource lawnmowerStart;
@@ -56,13 +55,7 @@ public class LawnmowerMover : MonoBehaviour
             }
         }
     }
-    
-    public void StopAndCharge()
-    {
-        isMoving = !Physics.CheckSphere(transform.position, 0.1f, charger);
-        if (isMoving == false) { rb.velocity = Vector3.zero; }
         
-    }
     
     public void StopAndDie()
     {
