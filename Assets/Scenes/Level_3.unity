@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3326,13 +3326,11 @@ MonoBehaviour:
   wall:
     serializedVersion: 2
     m_Bits: 8
-  charger:
-    serializedVersion: 2
-    m_Bits: 16
   asphodel:
     serializedVersion: 2
-    m_Bits: 80
+    m_Bits: 64
   lawnmowerStart: {fileID: 1391889547}
+  dustTrail: {fileID: 0}
 --- !u!65 &1391889543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5415,7 +5413,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2901805596275237145, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

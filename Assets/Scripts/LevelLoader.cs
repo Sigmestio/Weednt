@@ -20,6 +20,12 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene("Settings");
     }
+    
+    public void ReloadScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
+    }
     public void Quit()
     {
         Debug.Log("Quit");

@@ -10,7 +10,6 @@ public class LawnmowerMover : MonoBehaviour
     [SerializeField] private bool isMoving = false;
     [SerializeField] private LayerMask wall;
     [SerializeField] private LayerMask asphodel;
-
     [SerializeField] private AudioSource lawnmowerStart;
 
     [SerializeField] private ParticleSystem dustTrail;
