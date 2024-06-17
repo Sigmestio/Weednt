@@ -3153,7 +3153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c784d9363d6975c46ab6505b0907abd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highScore1Text: {fileID: 0}
   sceneData: {fileID: 0}
 --- !u!1 &1636653863
 GameObject:
@@ -4238,7 +4237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c784d9363d6975c46ab6505b0907abd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highScore1Text: {fileID: 0}
   sceneData: {fileID: 11400000, guid: 4270413b592324344b89c0faeebcc3ba, type: 2}
 --- !u!1 &2066533575
 GameObject:
