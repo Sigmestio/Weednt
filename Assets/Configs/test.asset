@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2181dfe565fb77b4c979a9b72f14eb5d, type: 3}
   m_Name: test
   m_EditorClassIdentifier: 
-  redWeeds: 0
-  maxArrows: 0
+  redWeeds: 2
+  maxArrows: 4
