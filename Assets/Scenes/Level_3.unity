@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 1913681158}
-  target: {fileID: 0}
+  target: {fileID: 337187467}
 --- !u!4 &30304597
 Transform:
   m_ObjectHideFlags: 0
@@ -973,6 +973,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 148f310deef5d51498cce843061a9d50, type: 3}
+--- !u!4 &337187467 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
+    type: 3}
+  m_PrefabInstance: {fileID: 337187466}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &351395021
 GameObject:
   m_ObjectHideFlags: 0
