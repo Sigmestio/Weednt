@@ -1608,7 +1608,7 @@ GameObject:
   - component: {fileID: 831789314}
   m_Layer: 0
   m_Name: Weeds
-  m_TagString: Untagged
+  m_TagString: Weed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3049,7 +3049,7 @@ GameObject:
   - component: {fileID: 1555161965}
   m_Layer: 0
   m_Name: Weed (1)
-  m_TagString: Untagged
+  m_TagString: Weed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4748,8 +4748,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5993082719689321986, guid: 7c4f0e36562c98c48ab5714eb34a1f26,
         type: 3}
+      propertyPath: speed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5993082719689321986, guid: 7c4f0e36562c98c48ab5714eb34a1f26,
+        type: 3}
       propertyPath: maxSpeed
-      value: 2.7
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 5993082719689321986, guid: 7c4f0e36562c98c48ab5714eb34a1f26,
         type: 3}
