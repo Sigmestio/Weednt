@@ -18,6 +18,11 @@ public class DisableWeedAndBonus : MonoBehaviour
                 hasTriggered = true;
                 DisableMesh();
                 lawnmowerEat.Play();
+                
+                if (!IsMeshEnabled())
+                {
+                    ScoreManager.Instance.AddCleanedDirt();
+                }
 
             }
         }

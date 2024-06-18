@@ -7,5 +7,4 @@ public class SceneConfigsSO : ScriptableObject
 {
     public int redWeeds;
     public int maxArrows;
-    public int currentStatus;
 }

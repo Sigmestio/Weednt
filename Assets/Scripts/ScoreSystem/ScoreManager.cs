@@ -5,8 +5,8 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
-
-    public LevelLoader levelLoader;
+    
+    public GameObject goodEndingCanvas;
     public SceneConfigsSO sceneData;
     private int currentWeedsKilled = 0;
     private int routeMoves = 0;
@@ -14,68 +14,75 @@ public class ScoreManager : MonoBehaviour
 
     private void Awake()
     {
-        if(Instance == null)
+        if (Instance == null)
         {
             Instance = this;
         }
         else
         {
-            Instance = this;
+            Destroy(gameObject); 
         }
     }
+
     private void Start()
     {
-       currentWeedsKilled = 0;
+        currentWeedsKilled = 0;
         routeMoves = 0;
         currentTotalPoints = 0;
+        goodEndingCanvas.SetActive(false);
     }
+
     public void AddCleanedDirt()
     {
         currentWeedsKilled++;
+        if (currentWeedsKilled == sceneData.redWeeds)
+        {
+            CheckForGoodEnding();
+        }
     }
-    
+
     public void AddRouteMoves()
     {
         routeMoves++;
     }
+
     public void DeleteRouteMoves()
     {
         routeMoves--;
-    } 
+    }
+
+    private void CheckForGoodEnding()
+    {
+        if (currentWeedsKilled == sceneData.redWeeds && routeMoves <= sceneData.maxArrows)
+        {
+            ActivateGoodEnding();
+        }
+    }
+
+    private void ActivateGoodEnding()
+    {
+        goodEndingCanvas.SetActive(true);
+    }
+
     public void CalculateScore()
     {
-        if(currentWeedsKilled == sceneData.redWeeds)
+        currentTotalPoints = 0;
+
+        if (currentWeedsKilled >= sceneData.redWeeds)
         {
             currentTotalPoints++;
         }
-        if(currentTotalPoints == 2 && routeMoves <= sceneData.maxArrows)
+
+        if (currentTotalPoints >= 1 && routeMoves <= sceneData.maxArrows)
         {
             currentTotalPoints++;
         }
-       
     }
 
     public void EndLevel()
     {
         CalculateScore();
-
-        if (levelLoader != null)
-        {
-            levelLoader.SetScoreText(currentTotalPoints);
-            UpdateHighScore();
-        }
-    }
-
-    private void UpdateHighScore()
-    {
-        if (currentTotalPoints > sceneData.currentStatus)
-        {
-            sceneData.currentStatus = currentTotalPoints;
-            Debug.Log("Nowy najlepszy wynik: " + currentTotalPoints);
-        }
-        else
-        {
-            Debug.Log("Aktualny najlepszy wynik: " + sceneData.currentStatus);
-        }
+        CheckForGoodEnding();
     }
 }
+
