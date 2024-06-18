@@ -1047,6 +1047,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 7982429953846493066, guid: 7b123908f5e7afc4a8e2d98a32fe9b96,
         type: 3}
+      propertyPath: lawnmowerMover
+      value: 
+      objectReference: {fileID: 1239631333}
+    - target: {fileID: 7982429953846493066, guid: 7b123908f5e7afc4a8e2d98a32fe9b96,
+        type: 3}
       propertyPath: goodEndingCanvas
       value: 
       objectReference: {fileID: 1983755697}

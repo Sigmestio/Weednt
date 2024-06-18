@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
-    
+    [SerializeField] LawnmowerMover lawnmowerMover;
     public GameObject goodEndingCanvas;
     public SceneConfigsSO sceneData;
     private int currentWeedsKilled = 0;
@@ -56,12 +56,14 @@ public class ScoreManager : MonoBehaviour
         if (currentWeedsKilled == sceneData.redWeeds && routeMoves <= sceneData.maxArrows)
         {
             ActivateGoodEnding();
+            
         }
     }
 
     private void ActivateGoodEnding()
     {
         goodEndingCanvas.SetActive(true);
+        lawnmowerMover.StopBeHappy();
     }
 
     public void CalculateScore()
@@ -83,6 +85,7 @@ public class ScoreManager : MonoBehaviour
     {
         CalculateScore();
         CheckForGoodEnding();
+       
     }
 }
 

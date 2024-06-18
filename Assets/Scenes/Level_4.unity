@@ -2618,6 +2618,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 7982429953846493066, guid: 7b123908f5e7afc4a8e2d98a32fe9b96,
         type: 3}
+      propertyPath: lawnmowerMover
+      value: 
+      objectReference: {fileID: 1785448092}
+    - target: {fileID: 7982429953846493066, guid: 7b123908f5e7afc4a8e2d98a32fe9b96,
+        type: 3}
       propertyPath: goodEndingCanvas
       value: 
       objectReference: {fileID: 1983755697}
@@ -4201,6 +4206,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1777017182}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1785448092 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5993082719689321986, guid: 7c4f0e36562c98c48ab5714eb34a1f26,
+    type: 3}
+  m_PrefabInstance: {fileID: 1251522260}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27311a158e4a6744aba8a296400a3224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1795608850
 GameObject:
   m_ObjectHideFlags: 0
