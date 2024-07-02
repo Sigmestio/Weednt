@@ -1,10 +1,13 @@
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
     public SceneConfigsSO sceneData;
+    [SerializeField] GameObject settingsUI;
+    [SerializeField] GameObject tutorialUI;
     
     public void Level1()
     {
@@ -57,7 +60,22 @@ public class LevelLoader : MonoBehaviour
     }
     public void Settings()
     {
-        SceneManager.LoadScene("Settings");
+        settingsUI.SetActive(true);
+    }
+
+    public void Tutorial()
+    {
+        tutorialUI.SetActive(true);
+    }
+
+    public void SettingsOut()
+    {
+        settingsUI.SetActive(false);
+    }
+
+    public void TutorialOut()
+    {
+        tutorialUI.SetActive(false);
     }
     
     public void ReloadScene()
