@@ -61,4 +61,11 @@ public class LawnmowerMover : MonoBehaviour
         isMoving = !Physics.CheckSphere(transform.position, 0.1f, asphodel);
         if (isMoving == false) { rb.velocity = Vector3.zero; }
     }
+
+    public void StopBeHappy()
+    {
+        isMoving = false;
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+    }
 }
