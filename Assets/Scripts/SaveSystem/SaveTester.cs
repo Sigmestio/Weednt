@@ -6,19 +6,25 @@ using UnityEngine.TextCore.Text;
 
 public class SaveTester : MonoBehaviour
 {
-    public SaveData saveData;
-    
-    [ContextMenu("Save")]
-    public void Save()
+    private SaveManager saveManager;
+
+    private void Start()
     {
-        Debug.Log("I'm saving");
-        SerializationManager.Save("test", saveData);
+        saveManager = FindObjectOfType<SaveManager>();
     }
 
-    [ContextMenu("Load")]
+    public void Save()
+    {
+        saveManager.SaveGame();
+    }
+
+    public void SaveQuit()
+    {
+        saveManager.SaveGameAndQuit();
+    }
+
     public void Load()
     {
-        Debug.Log("I'm loading");
-        saveData = (SaveData)SerializationManager.Load("test");
+        saveManager.LoadGame();
     }
 }
