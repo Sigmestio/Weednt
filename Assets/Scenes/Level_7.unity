@@ -1165,6 +1165,56 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2066533577}
     m_Modifications:
+    - target: {fileID: 2411062383724323993, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2066533578}
+    - target: {fileID: 2411062383724323993, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReloadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2411062383724323993, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1391889542}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartLawnmower
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LawnmowerMover, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5927723437330655914, guid: ed1ceb73615a35449982a529004af85f,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1269,6 +1319,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2066533578}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2648,6 +2733,12 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 30914083}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1156725179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 112396472985575245, guid: ed1ceb73615a35449982a529004af85f,
+    type: 3}
+  m_PrefabInstance: {fileID: 342235609}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1172161758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,6 +2873,18 @@ Transform:
   - {fileID: 1344418927}
   m_Father: {fileID: 210035188}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1210160669 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2411062383724323993, guid: ed1ceb73615a35449982a529004af85f,
+    type: 3}
+  m_PrefabInstance: {fileID: 342235609}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1240423881
 GameObject:
   m_ObjectHideFlags: 0
@@ -2817,129 +2920,6 @@ Transform:
   - {fileID: 682779666}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1259216033
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1259216034}
-  - component: {fileID: 1259216039}
-  - component: {fileID: 1259216038}
-  - component: {fileID: 1259216037}
-  - component: {fileID: 1259216035}
-  m_Layer: 7
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1259216034
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259216033}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.02, z: 2.02}
-  m_LocalScale: {x: 0.7, y: 0.1, z: 0.7}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1350941502}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1259216035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259216033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8961e6827e60c6b43a2419c0b684f462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  endgameCanvas: {fileID: 1983755697}
-  lawnmowerMover: {fileID: 1391889542}
-  happyMusic: {fileID: 0}
-  BackgroundMusicStops: {fileID: 0}
-  lawnmowerStops: {fileID: 0}
---- !u!65 &1259216037
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259216033}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.1, y: 1, z: 0.1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1259216038
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259216033}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 07f0671b76ebdfb4db2d14a784398693, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1259216039
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259216033}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1265245323
 GameObject:
   m_ObjectHideFlags: 0
@@ -3268,38 +3248,6 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 837470879}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1350941501
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1350941502}
-  m_Layer: 7
-  m_Name: Charger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1350941502
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350941501}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1259216034}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1355371235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3541,6 +3489,7 @@ MonoBehaviour:
     m_Bits: 80
   lawnmowerStart: {fileID: 1391889551}
   dustTrail: {fileID: 0}
+  startButton: {fileID: 1940808561}
 --- !u!65 &1391889547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5280,6 +5229,18 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &1940808561 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+    type: 3}
+  m_PrefabInstance: {fileID: 342235609}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1972618609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5586,7 +5547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2066533577}
-  - component: {fileID: 2066533576}
+  - component: {fileID: 2066533578}
   m_Layer: 0
   m_Name: UIParent
   m_TagString: Untagged
@@ -5594,19 +5555,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2066533576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066533575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f14f65e1b328399499b61a889d1888a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  restartButton: {fileID: 0}
 --- !u!4 &2066533577
 Transform:
   m_ObjectHideFlags: 0
@@ -5623,6 +5571,20 @@ Transform:
   - {fileID: 342235610}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2066533578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066533575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609a24fd27b11044584c9ed409414563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restartButton: {fileID: 1210160669}
+  info: {fileID: 1156725179}
 --- !u!1 &2091118746
 GameObject:
   m_ObjectHideFlags: 0
@@ -6049,7 +6011,6 @@ SceneRoots:
   - {fileID: 277308540}
   - {fileID: 210035188}
   - {fileID: 230276}
-  - {fileID: 1350941502}
   - {fileID: 1355371235}
   - {fileID: 1764266352}
   - {fileID: 971189610}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LawnmowerMover : MonoBehaviour
 {
@@ -14,9 +15,12 @@ public class LawnmowerMover : MonoBehaviour
 
     [SerializeField] private ParticleSystem dustTrail;
 
+    [SerializeField] private Button startButton;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        startButton.onClick.AddListener(StartLawnmower);
     }
 
     private void FixedUpdate()
@@ -41,17 +45,13 @@ public class LawnmowerMover : MonoBehaviour
     }
 
     
-    void Update()
+    public void StartLawnmower()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!isMoving)
         {
-            if (!isMoving)
-            {
-                isMoving = true;
-                lawnmowerStart.Play(); 
-
-                dustTrail.Play();
-            }
+            isMoving = true;
+            lawnmowerStart.Play();
+            dustTrail.Play();
         }
     }
         
