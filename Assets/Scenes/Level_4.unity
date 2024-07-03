@@ -182,6 +182,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tree_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4023777081140084946, guid: c8d20548cc0900b41bac74a2f04e9dc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4974208912681274661, guid: c8d20548cc0900b41bac74a2f04e9dc8,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -366,7 +371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 120060415}
-  - component: {fileID: 120060414}
+  - component: {fileID: 120060416}
   m_Layer: 0
   m_Name: UIParent
   m_TagString: Untagged
@@ -374,19 +379,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &120060414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120060413}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f14f65e1b328399499b61a889d1888a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  restartButton: {fileID: 0}
 --- !u!4 &120060415
 Transform:
   m_ObjectHideFlags: 0
@@ -403,6 +395,20 @@ Transform:
   - {fileID: 397883772}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &120060416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120060413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609a24fd27b11044584c9ed409414563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restartButton: {fileID: 1319965234}
+  info: {fileID: 1743709825}
 --- !u!1001 &139593474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -415,6 +421,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Clouds
+      objectReference: {fileID: 0}
+    - target: {fileID: 2480845621366875944, guid: d960483f21812974caf347972544533f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6668621545861116496, guid: d960483f21812974caf347972544533f,
         type: 3}
@@ -483,6 +494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_Bush_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6848030112203950960, guid: 0bcbb37340cac384ab580c3a89fb5241,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7785998427112889365, guid: 0bcbb37340cac384ab580c3a89fb5241,
         type: 3}
@@ -879,6 +895,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 120060415}
     m_Modifications:
+    - target: {fileID: 127254101426055754, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_text
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 127254101426055754, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 44.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2411062383724323993, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 120060416}
+    - target: {fileID: 2411062383724323993, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReloadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2411062383724323993, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1785448092}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartLawnmower
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LawnmowerMover, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761760998013660931, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 120060416}
+    - target: {fileID: 5761760998013660931, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InfoOut
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761760998013660931, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761760998013660931, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5927723437330655914, guid: ed1ceb73615a35449982a529004af85f,
         type: 3}
       propertyPath: m_Pivot.x
@@ -983,6 +1079,56 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949811572827448837, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 120060416}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392904397797911874, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_text
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392904397797911874, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1372,6 +1518,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tree_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4023777081140084946, guid: c8d20548cc0900b41bac74a2f04e9dc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4974208912681274661, guid: c8d20548cc0900b41bac74a2f04e9dc8,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1471,7 +1622,7 @@ Transform:
   m_GameObject: {fileID: 658336012}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.185, y: 0.087, z: -0.686}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1561,133 +1712,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   badEndgameCanvas: {fileID: 1627981329}
-  lawnmowerMover: {fileID: 0}
+  lawnmowerMover: {fileID: 1785448092}
   sadMusic: {fileID: 1433035335}
   BackgroundMusicStops: {fileID: 458763048}
-  lawnmowerStops: {fileID: 0}
---- !u!1 &665092840
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 665092841}
-  - component: {fileID: 665092844}
-  - component: {fileID: 665092843}
-  - component: {fileID: 665092842}
-  - component: {fileID: 665092845}
-  m_Layer: 6
-  m_Name: Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &665092841
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665092840}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 741736403}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &665092842
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665092840}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &665092843
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665092840}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: e08f650ea95d0bd43bc5dfe805b3e7b6, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &665092844
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665092840}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &665092845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 665092840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 567a61b24247a1f42b52dc20e2944154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  badEndgameCanvas: {fileID: 1627981329}
-  lawnmowerMover: {fileID: 0}
-  sadMusic: {fileID: 0}
-  BackgroundMusicStops: {fileID: 458763048}
-  lawnmowerStops: {fileID: 0}
+  lawnmowerStops: {fileID: 1251522261}
 --- !u!1 &682779665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,38 +1821,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682779665}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &741736402
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 741736403}
-  m_Layer: 6
-  m_Name: Asphodel (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &741736403
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741736402}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.86, y: 0, z: 3.38}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 665092841}
-  m_Father: {fileID: 1308403179}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &812378186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1837,6 +1833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_Tree_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023777081140084946, guid: c8d20548cc0900b41bac74a2f04e9dc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4974208912681274661, guid: c8d20548cc0900b41bac74a2f04e9dc8,
         type: 3}
@@ -2066,6 +2067,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2254,6 +2260,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Flowers_02 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2870773943242719736, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3214682950060628802, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2304,7 +2315,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6241806696073517178, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1, type: 3}
+    - {fileID: 2901805596275237145, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2702,6 +2715,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Stone_01 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8321981251672926996, guid: 9c88229159ce9a140b678e465ca000ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8662196110411739566, guid: 9c88229159ce9a140b678e465ca000ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2770,6 +2788,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2825,6 +2848,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 148f310deef5d51498cce843061a9d50, type: 3}
+--- !u!114 &1172360635 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+    type: 3}
+  m_PrefabInstance: {fileID: 397883771}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1184076313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3074,11 +3109,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_LawnMower_02 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5993082719689321986, guid: 7c4f0e36562c98c48ab5714eb34a1f26,
+        type: 3}
+      propertyPath: startButton
+      value: 
+      objectReference: {fileID: 1172360635}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c4f0e36562c98c48ab5714eb34a1f26, type: 3}
+--- !u!82 &1251522261 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4446640275353419070, guid: 7c4f0e36562c98c48ab5714eb34a1f26,
+    type: 3}
+  m_PrefabInstance: {fileID: 1251522260}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1265245323
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,7 +3270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1308403179}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Asphodels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3245,10 +3291,21 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2062465283}
-  - {fileID: 741736403}
   - {fileID: 1297225911}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1319965234 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2411062383724323993, guid: ed1ceb73615a35449982a529004af85f,
+    type: 3}
+  m_PrefabInstance: {fileID: 397883771}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1342404187
 GameObject:
   m_ObjectHideFlags: 0
@@ -3567,6 +3624,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3732,6 +3794,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneData: {fileID: 11400000, guid: 5a5baa27711ae7440bb98b22441f76c3, type: 2}
+  settingsUI: {fileID: 0}
+  tutorialUI: {fileID: 0}
 --- !u!1 &1736808926
 GameObject:
   m_ObjectHideFlags: 0
@@ -3865,6 +3929,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736808926}
   m_CullTransparentMesh: 1
+--- !u!1 &1743709825 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6949811572827448837, guid: ed1ceb73615a35449982a529004af85f,
+    type: 3}
+  m_PrefabInstance: {fileID: 397883771}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1755922572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4194,10 +4264,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   badEndgameCanvas: {fileID: 1627981329}
-  lawnmowerMover: {fileID: 0}
+  lawnmowerMover: {fileID: 1785448092}
   sadMusic: {fileID: 2065429538}
   BackgroundMusicStops: {fileID: 458763048}
-  lawnmowerStops: {fileID: 0}
+  lawnmowerStops: {fileID: 1251522261}
 --- !u!1 &1829066564 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4576485988613635692, guid: af1937cc3ebb2f74baa81b914f9fd00e,
@@ -4634,6 +4704,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4701,6 +4776,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
@@ -4818,6 +4898,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneData: {fileID: 11400000, guid: 5a5baa27711ae7440bb98b22441f76c3, type: 2}
+  settingsUI: {fileID: 0}
+  tutorialUI: {fileID: 0}
 --- !u!1 &2062465282
 GameObject:
   m_ObjectHideFlags: 0
@@ -4863,6 +4945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_Flowers_02 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2870773943242719736, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3214682950060628802, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1,
         type: 3}
@@ -4914,7 +5001,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2901805596275237145, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1, type: 3}
+    - {fileID: 6241806696073517178, guid: 71c2dd29d2f3e6a4591d1bd3b461f2c1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5047,6 +5136,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}

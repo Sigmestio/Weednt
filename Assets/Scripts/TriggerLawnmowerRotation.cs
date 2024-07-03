@@ -23,20 +23,20 @@ public class TriggerLawnmowerRotation : MonoBehaviour
                 lawnmowerMovement.RotateLawnmower(transform.forward);
 
                 hasTriggered = true;
-                //DisableCanvas();
+                DisableCanvas();
             }
         }
 
-        //void DisableCanvas()
-        //{
-          //  Canvas canvas = GetComponentInChildren<Canvas>();
+        void DisableCanvas()
+        {
+            Canvas canvas = GetComponentInChildren<Canvas>();
 
-          //  if (canvas != null)
-          //  {
-          //      canvas.enabled = false;
-           // }
+            if (canvas != null)
+            {
+               canvas.enabled = false;
+            }
 
 
-       // }
+        }
     }
 }

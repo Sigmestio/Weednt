@@ -274,6 +274,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116414153}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &116683227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6949811572827448837, guid: ed1ceb73615a35449982a529004af85f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2095424879}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &198877399
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -286,6 +292,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
@@ -413,15 +424,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4576485988613635692, guid: af1937cc3ebb2f74baa81b914f9fd00e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 849045630}
-    - targetCorrespondingSourceObject: {fileID: 4576485988613635692, guid: af1937cc3ebb2f74baa81b914f9fd00e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 849045629}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af1937cc3ebb2f74baa81b914f9fd00e, type: 3}
 --- !u!82 &237517219 stripped
 AudioSource:
@@ -486,7 +489,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: menu
+  m_text: continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -650,6 +653,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clouds
       objectReference: {fileID: 0}
+    - target: {fileID: 2480845621366875944, guid: d960483f21812974caf347972544533f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6668621545861116496, guid: d960483f21812974caf347972544533f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -717,6 +725,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_Bush_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 912087438720166851, guid: 73abd9a5b1d91a240a4d162e9b9e84f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4720709775103659749, guid: 73abd9a5b1d91a240a4d162e9b9e84f3,
         type: 3}
@@ -1137,6 +1150,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5993082719689321986, guid: 7c4f0e36562c98c48ab5714eb34a1f26,
         type: 3}
+      propertyPath: startButton
+      value: 
+      objectReference: {fileID: 2095424881}
+    - target: {fileID: 5993082719689321986, guid: 7c4f0e36562c98c48ab5714eb34a1f26,
+        type: 3}
       propertyPath: asphodel.m_Bits
       value: 64
       objectReference: {fileID: 0}
@@ -1299,6 +1317,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1369,6 +1392,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 148f310deef5d51498cce843061a9d50, type: 3}
+--- !u!114 &531913278 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2411062383724323993, guid: ed1ceb73615a35449982a529004af85f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2095424879}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &601274265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,6 +1721,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tree_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4481656867636475589, guid: 81201df82bce47b4a844f2a63049cc77,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1801,7 +1841,7 @@ GameObject:
   - component: {fileID: 831789314}
   m_Layer: 0
   m_Name: Weeds
-  m_TagString: Untagged
+  m_TagString: Weed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1824,56 +1864,9 @@ Transform:
   - {fileID: 1555161965}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &849045627 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4576485988613635692, guid: af1937cc3ebb2f74baa81b914f9fd00e,
-    type: 3}
-  m_PrefabInstance: {fileID: 202503075}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &849045628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3803608120856306902, guid: af1937cc3ebb2f74baa81b914f9fd00e,
-    type: 3}
-  m_PrefabInstance: {fileID: 202503075}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &849045629
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849045627}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8017566174234000633, guid: 0ff1b42fdeef30b41b26db5c5176fccb, type: 3}
---- !u!114 &849045630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849045627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 499d8d035de63b04a80e97df10a7ac94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lawnmowerEat: {fileID: 849045631}
---- !u!82 &849045631 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4814707085774365535, guid: af1937cc3ebb2f74baa81b914f9fd00e,
     type: 3}
   m_PrefabInstance: {fileID: 202503075}
   m_PrefabAsset: {fileID: 0}
@@ -2053,15 +2046,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4576485988613635692, guid: af1937cc3ebb2f74baa81b914f9fd00e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1829066567}
-    - targetCorrespondingSourceObject: {fileID: 4576485988613635692, guid: af1937cc3ebb2f74baa81b914f9fd00e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1829066570}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af1937cc3ebb2f74baa81b914f9fd00e, type: 3}
 --- !u!4 &913903246 stripped
 Transform:
@@ -2154,7 +2139,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1983755699}
         m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
-        m_MethodName: Menu
+        m_MethodName: Level6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2214,6 +2199,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
@@ -2353,14 +2343,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Weed
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4010277427910501285, guid: af1937cc3ebb2f74baa81b914f9fd00e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4576485988613635692, guid: af1937cc3ebb2f74baa81b914f9fd00e,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1108447134}
     - targetCorrespondingSourceObject: {fileID: 4576485988613635692, guid: af1937cc3ebb2f74baa81b914f9fd00e,
         type: 3}
       insertIndex: -1
@@ -2400,25 +2387,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8017566174234000633, guid: 0ff1b42fdeef30b41b26db5c5176fccb, type: 3}
---- !u!114 &1108447134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108447132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 499d8d035de63b04a80e97df10a7ac94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lawnmowerEat: {fileID: 1108447135}
---- !u!82 &1108447135 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4814707085774365535, guid: af1937cc3ebb2f74baa81b914f9fd00e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1108447130}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1141516532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2430,7 +2398,7 @@ GameObject:
   - component: {fileID: 1141516533}
   m_Layer: 0
   m_Name: Weed (2)
-  m_TagString: Untagged
+  m_TagString: Weed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2463,6 +2431,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
@@ -2599,6 +2572,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
@@ -2986,7 +2964,7 @@ GameObject:
   - component: {fileID: 1379697368}
   m_Layer: 0
   m_Name: Weed
-  m_TagString: Untagged
+  m_TagString: Weed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3226,7 +3204,7 @@ GameObject:
   - component: {fileID: 1555161965}
   m_Layer: 0
   m_Name: Weed (1)
-  m_TagString: Untagged
+  m_TagString: Weed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3425,6 +3403,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneData: {fileID: 11400000, guid: a3f7fd6add045a047828741290dc0dcd, type: 2}
+  settingsUI: {fileID: 0}
+  tutorialUI: {fileID: 0}
 --- !u!1 &1660836056
 GameObject:
   m_ObjectHideFlags: 0
@@ -3469,6 +3449,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
@@ -3850,47 +3835,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1777017182}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1829066564 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4576485988613635692, guid: af1937cc3ebb2f74baa81b914f9fd00e,
-    type: 3}
-  m_PrefabInstance: {fileID: 913903245}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1829066567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829066564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 499d8d035de63b04a80e97df10a7ac94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lawnmowerEat: {fileID: 1829066571}
---- !u!64 &1829066570
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829066564}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8017566174234000633, guid: 0ff1b42fdeef30b41b26db5c5176fccb, type: 3}
 --- !u!82 &1829066571 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 4814707085774365535, guid: af1937cc3ebb2f74baa81b914f9fd00e,
@@ -4149,6 +4093,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tree_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4023777081140084946, guid: c8d20548cc0900b41bac74a2f04e9dc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4974208912681274661, guid: c8d20548cc0900b41bac74a2f04e9dc8,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4365,7 +4314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1965284277}
-  - component: {fileID: 1965284276}
+  - component: {fileID: 1965284278}
   m_Layer: 0
   m_Name: UIParent
   m_TagString: Untagged
@@ -4373,19 +4322,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1965284276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965284275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f14f65e1b328399499b61a889d1888a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  restartButton: {fileID: 0}
 --- !u!4 &1965284277
 Transform:
   m_ObjectHideFlags: 0
@@ -4402,6 +4338,20 @@ Transform:
   - {fileID: 2095424880}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1965284278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965284275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609a24fd27b11044584c9ed409414563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  restartButton: {fileID: 531913278}
+  info: {fileID: 116683227}
 --- !u!1 &1983755697
 GameObject:
   m_ObjectHideFlags: 0
@@ -4448,6 +4398,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneData: {fileID: 11400000, guid: a3f7fd6add045a047828741290dc0dcd, type: 2}
+  settingsUI: {fileID: 0}
+  tutorialUI: {fileID: 0}
 --- !u!1 &2091118746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,6 +4512,86 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1965284277}
     m_Modifications:
+    - target: {fileID: 127254101426055754, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_text
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 127254101426055754, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 44.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2411062383724323993, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1965284278}
+    - target: {fileID: 2411062383724323993, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReloadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 2411062383724323993, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 434793248}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartLawnmower
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LawnmowerMover, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761760998013660931, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1965284278}
+    - target: {fileID: 5761760998013660931, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: InfoOut
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761760998013660931, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761760998013660931, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5927723437330655914, guid: ed1ceb73615a35449982a529004af85f,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4665,6 +4697,56 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6949811572827448837, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1965284278}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564455697066327242, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392904397797911874, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_text
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392904397797911874, guid: ed1ceb73615a35449982a529004af85f,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4676,6 +4758,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2095424879}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2095424881 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3063860089140141237, guid: ed1ceb73615a35449982a529004af85f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2095424879}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2118546898
 GameObject:
   m_ObjectHideFlags: 0
@@ -4822,6 +4916,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_Tree_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023777081140084946, guid: c8d20548cc0900b41bac74a2f04e9dc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4974208912681274661, guid: c8d20548cc0900b41bac74a2f04e9dc8,
         type: 3}
