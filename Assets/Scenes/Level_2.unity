@@ -136,6 +136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -685,6 +690,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -850,6 +860,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
@@ -1208,6 +1223,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clouds
       objectReference: {fileID: 0}
+    - target: {fileID: 2480845621366875944, guid: d960483f21812974caf347972544533f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6668621545861116496, guid: d960483f21812974caf347972544533f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1381,6 +1401,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1448,6 +1473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_Tree_02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023777081140084946, guid: c8d20548cc0900b41bac74a2f04e9dc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4974208912681274661, guid: c8d20548cc0900b41bac74a2f04e9dc8,
         type: 3}
@@ -1531,6 +1561,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_Tree_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4023777081140084946, guid: c8d20548cc0900b41bac74a2f04e9dc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4974208912681274661, guid: c8d20548cc0900b41bac74a2f04e9dc8,
         type: 3}
@@ -2306,6 +2341,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Tree_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4023777081140084946, guid: c8d20548cc0900b41bac74a2f04e9dc8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4974208912681274661, guid: c8d20548cc0900b41bac74a2f04e9dc8,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2807,6 +2847,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
@@ -4085,6 +4130,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pond_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1368503897565220514, guid: 1988ee583961cc24dbcf53ff503f09ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2774323159959807073, guid: 1988ee583961cc24dbcf53ff503f09ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4134,6 +4184,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574237275458276128, guid: 1988ee583961cc24dbcf53ff503f09ff,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4585,6 +4640,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4720,6 +4780,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_FloatingIsland_01 Variant (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782231519485824843, guid: 148f310deef5d51498cce843061a9d50,
+        type: 3}
+      propertyPath: m_Layer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6590257480015894001, guid: 148f310deef5d51498cce843061a9d50,
         type: 3}
